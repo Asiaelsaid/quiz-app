@@ -21,6 +21,18 @@ body {
 .quiz-info .category {
 	flex: 1;
 }
+.quiz-info .category span {
+	color: var(--main-color);
+	font-weight: bold;
+	font-size: 18px;
+	background-color: var(--scond-color);
+	padding: 8px 16px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
 .quiz-info .count {
 	flex: 1;
 	text-align: right;
