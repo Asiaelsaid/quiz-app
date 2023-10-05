@@ -1,0 +1,106 @@
+* {
+	box-sizing: border-box;
+	--main-color: #fff;
+	--scond-color: #e91e63;
+	--third-color: #f8f8f8;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.quiz-app {
+	margin: 20px auto;
+	background-color: var(--third-color);
+	width: 60%;
+	padding: 20px;
+}
+.quiz-info {
+	padding: 20px;
+	background-color: var(--main-color);
+	display: flex;
+}
+.quiz-info .category {
+	flex: 1;
+}
+.quiz-info .count {
+	flex: 1;
+	text-align: right;
+}
+.quiz-area,
+.quiz-answers {
+	padding: 20px;
+	margin-top: 15px;
+	background-color: var(--main-color);
+}
+.quiz-area h2 {
+	margin: 0;
+}
+.answers-area .answer {
+	display: block;
+	padding: 20px;
+	background-color: var(--third-color);
+}
+.answers-area .answer:not(:last-child) {
+	border-bottom: 1px solid #dfdfdf;
+}
+.quiz-app .answers-area .answer label {
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 14px;
+	margin-left: 5px;
+	position: relative;
+	top: -2px;
+	color: #777;
+}
+.quiz-app .submit-btn {
+	width: 30%;
+	display: block;
+	border: none;
+	color: var(--main-color);
+	font-weight: bold;
+	font-size: 18px;
+	background-color: var(--scond-color);
+	margin: 20px auto;
+	cursor: pointer;
+	padding: 15px 20px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+}
+.quiz-app .submit-btn:focus {
+	outline: none;
+}
+.quiz-app .bullets {
+	display: flex;
+	background-color: var(--main-color);
+	border-top: 1px solid #dfdfdf;
+	padding: 20px;
+}
+.quiz-app .bullets .spans {
+	flex: 1;
+	display: flex;
+}
+.quiz-app .bullets .spans span {
+	width: 20px;
+	height: 20px;
+	background-color: #ddd;
+	margin-right: 5px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+.quiz-app .bullets .spans span.on {
+	background-color: var(--scond-color);
+}
+.quiz-app .result span.bad {
+	color: #dc0a0a;
+}
+.quiz-app .result span.good {
+	color: #009688;
+}
+.quiz-app .result span.perfect {
+	color: var(--scond-color);
+}
